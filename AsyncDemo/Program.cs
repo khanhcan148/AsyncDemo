@@ -1,9 +1,9 @@
 using AsyncDemo;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 ThreadPool.SetMinThreads(1, 1);
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 app.MapGet("/", () =>
 {
